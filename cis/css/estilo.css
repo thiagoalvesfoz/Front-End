@@ -37,6 +37,7 @@ header{
 .top{
     /* grid */
     display: grid;
+    height: 100%;
     grid-template-areas: "logo ... nav";
     grid-template-columns: auto 1fr auto;
     align-content: center;
@@ -44,12 +45,17 @@ header{
 .logo{
     grid-area: logo;
 }
-.logo > h1 > a{
-    color: white;e
+
+.logo > h1 > a > img {
+    width: 300px;
+    display: grid;
+    align-content: center;
 }
 
 .nav-bar{
     grid-area: nav;
+    display: grid;
+    align-content: center;
 }
 
 .nav-bar > ul {
